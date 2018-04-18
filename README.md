@@ -13,7 +13,7 @@
 3. If found user, sign a jwt with account info and set expiration to 5 minutes
 4. Then, set token in req.sessions.token using client-sessions
 
-### API Authentication
+### API Authentication, /api
 1. When user requests /api, the browser will automatically bring session cookie which contains token to server
 2. Server check if the token can be verified or has been expired
 3. If the token pass, server will grant to provide api services
@@ -100,8 +100,8 @@ var userSchema = new mongoose.Schema({
 });
 ```
 ## Reference
-[以 JSON Web Token 替代傳統 Token](https://yami.io/jwt/)
-[Where to Store your JWTs – Cookies vs HTML5 Web Storage](https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage)
-[10 Things You Should Know about Tokens](https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/)
-[Using secure client-side sessions to build simple and scalable Node.JS applications – A Node.JS Holiday Season, part 3](https://hacks.mozilla.org/2012/12/using-secure-client-side-sessions-to-build-simple-and-scalable-node-js-applications-a-node-js-holiday-season-part-3/)
-[Express Tutorial Part 4: Routes and controllers](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes)
+- [以 JSON Web Token 替代傳統 Token](https://yami.io/jwt/)
+- [Where to Store your JWTs – Cookies vs HTML5 Web Storage](https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage)
+- [10 Things You Should Know about Tokens](https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/)
+- [Using secure client-side sessions to build simple and scalable Node.JS applications – A Node.JS Holiday Season, part 3](https://hacks.mozilla.org/2012/12/using-secure-client-side-sessions-to-build-simple-and-scalable-node-js-applications-a-node-js-holiday-season-part-3/)
+- [Express Tutorial Part 4: Routes and controllers](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes)
